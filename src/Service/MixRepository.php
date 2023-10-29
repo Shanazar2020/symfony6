@@ -10,7 +10,9 @@ class MixRepository
 
     public function __construct(
         private HttpClientInterface $client,
-        private CacheInterface $cache)
+        private CacheInterface $cache,
+        private bool $isDebug
+    )
     {
     }
 
